@@ -3,13 +3,14 @@ import './Homepage.scss';
 import DirectoryMenu from '../../components/DirectoryMenu/DirectoryMenu';
 
 class Homepage extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
 
     this.state = {};
   }
 
   render() {
+    console.log(this.props);
     return (
       <div className="homepage">
         <DirectoryMenu />
